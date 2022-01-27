@@ -1,200 +1,184 @@
 {
-  "Truck Number": [52, 53],
-  "Date": "",
-  "Milage": 0,
-  "Checked By": "",
-  "Fuel Level": 0.0,
+  "Trucks": [52, 53],
+  "-- Selected Truck": null,
+  "Date": null,
+  "Milage": null,
+  "Checked By": null,
+  "Fuel Level": null,
   "Sections": [
     {
       "Header": "Oxygen Delivery/Suction",
       "Fields": [
-        { "name": "Manual Suction Device", "amount": 1, "Date": null },
+        { "Name": "Manual Suction Device", "Amount": 1 },
         {
-          "name": "Onboard/Electric Suction Device",
-          "amount": null,
-          "Date": null
+          "Name": "Onboard/Electric Suction Device"
         },
-        { "name": "Portable Suction Device", "amount": null, "Date": null },
-        { "name": "Yaunkers", "amount": 3, "Date": null },
-        { "name": "Bulb Syringe", "amount": 1, "Date": null },
-        { "name": "Audult BVM", "amount": 1, "Date": null },
-        { "name": "O2 Humidifier Bottle", "amount": 1, "Date": null },
-        { "name": "02 Supply Tubing", "amount": 3, "Date": null },
-        { "name": "Adult Nasal Cannulas", "amount": 3, "Date": null },
-        { "name": "Adult Non-Rebreathers", "amount": 3, "Date": null },
-        { "name": "Pediatric Nasal Cannulas", "amount": 3, "Date": null },
-        { "name": "Pediatric Non-Rebreathers", "amount": 3, "Date": null },
+        { "Name": "Portable Suction Device" },
+        { "Name": "Yaunkers", "Amount": 3 },
+        { "Name": "Bulb Syringe", "Amount": 1 },
+        { "Name": "Audult BVM", "Amount": 1 },
+        { "Name": "O2 Humidifier Bottle", "Amount": 1 },
+        { "Name": "02 Supply Tubing", "Amount": 3 },
+        { "Name": "Adult Nasal Cannulas", "Amount": 3 },
+        { "Name": "Adult Non-Rebreathers", "Amount": 3 },
+        { "Name": "Pediatric Nasal Cannulas", "Amount": 3 },
+        { "Name": "Pediatric Non-Rebreathers", "Amount": 3 },
         {
-          "name": "Suction Catheter (6 fr - 16 fr)",
-          "amount": 1,
-          "Date": null
+          "Name": "Suction Catheter (6 fr - 16 fr)",
+          "Amount": 1
         },
         {
-          "name": "Onboard Trash Can (emptied)",
-          "amount": null,
-          "Date": null
+          "Name": "Onboard Trash Can (emptied)"
         },
         {
-          "name": "Disposable Sharps Container",
-          "amount": null,
-          "Date": null
+          "Name": "Disposable Sharps Container"
         },
-        { "name": "OPA's (Sizes 0-5)", "amount": null, "Date": null },
-        { "name": "Broselow Tape", "amount": null, "Date": null },
-        { "name": "Nebulizer", "amount": null, "Date": null },
-        { "name": "Nebulizer Mask", "amount": null, "Date": null }
+        { "Name": "OPA's (Sizes 0-5)" },
+        { "Name": "Broselow Tape" },
+        { "Name": "Nebulizer" },
+        { "Name": "Nebulizer Mask" }
       ]
     },
     {
       "Header": "NPA's",
       "Fields": [
-        { "name": "Size 14", "amount": null, "Date": -1 },
-        { "name": "Size 16", "amount": null, "Date": -1 },
-        { "name": "Size 18", "amount": null, "Date": -1 },
-        { "name": "Size 20", "amount": null, "Date": -1 },
-        { "name": "Size 22", "amount": null, "Date": -1 },
-        { "name": "Size 24", "amount": null, "Date": -1 },
-        { "name": "Size 26", "amount": null, "Date": -1 },
-        { "name": "Size 28", "amount": null, "Date": -1 },
-        { "name": "Size 30", "amount": null, "Date": -1 },
-        { "name": "Size 32", "amount": null, "Date": -1 },
-        { "name": "Size 34", "amount": null, "Date": -1 },
-        { "name": "Size 36", "amount": null, "Date": -1 },
-        { "name": "Lubricating Jelly", "amount": null, "Date": null }
+        { "Name": "Size 14", "Date": null },
+        { "Name": "Size 16", "Date": null },
+        { "Name": "Size 18", "Date": null },
+        { "Name": "Size 20", "Date": null },
+        { "Name": "Size 22", "Date": null },
+        { "Name": "Size 24", "Date": null },
+        { "Name": "Size 26", "Date": null },
+        { "Name": "Size 28", "Date": null },
+        { "Name": "Size 30", "Date": null },
+        { "Name": "Size 32", "Date": null },
+        { "Name": "Size 34", "Date": null },
+        { "Name": "Size 36", "Date": null },
+        { "Name": "Lubricating Jelly" }
       ]
     },
     {
       "Header": "King LT's",
       "Fields": [
-        { "name": "Size 2", "amount": null, "Date": -1 },
-        { "name": "Size 2.5", "amount": null, "Date": -1 },
-        { "name": "Size 3", "amount": null, "Date": -1 },
-        { "name": "Size 4", "amount": null, "Date": -1 },
-        { "name": "Size 5", "amount": null, "Date": -1 },
-        { "name": "ETCO2 Detector (Color)", "amount": null, "Date": -1 }
+        { "Name": "Size 2", "Date": null },
+        { "Name": "Size 2.5", "Date": null },
+        { "Name": "Size 3", "Date": null },
+        { "Name": "Size 4", "Date": null },
+        { "Name": "Size 5", "Date": null },
+        { "Name": "ETCO2 Detector (Color)", "Date": null }
       ]
     },
     {
       "Header": "Linen Cabinet",
       "Fields": [
-        { "name": "Blankets", "amount": 2, "Date": null },
-        { "name": "Pillow Cases", "amount": 3, "Date": null },
-        { "name": "Sheets", "amount": 6, "Date": null },
-        { "name": "Towels", "amount": 6, "Date": null },
-        { "name": "Wash Cloths", "amount": 6, "Date": null }
+        { "Name": "Blankets", "Amount": 2 },
+        { "Name": "Pillow Cases", "Amount": 3 },
+        { "Name": "Sheets", "Amount": 6 },
+        { "Name": "Towels", "Amount": 6 },
+        { "Name": "Wash Cloths", "Amount": 6 }
       ]
     },
     {
       "Header": "Oxygen",
       "Fields": [
         {
-          "name": "Main 02",
-          "amount": null,
-          "Date": null,
-          "Amount (PSI)": ""
+          "Name": "Main 02",
+
+          "Amount (PSI)": null
         },
         {
-          "name": "Portable O2",
-          "amount": null,
-          "Date": null,
-          "Amount (PSI)": ""
+          "Name": "Portable O2",
+
+          "Amount (PSI)": null
         },
-        { "name": "Extra O2 Bottle (Full)", "amount": 1, "Date": null }
+        { "Name": "Extra O2 Bottle (Full)", "Amount": 1 }
       ]
     },
     {
       "Header": "BLS Drug Box (Airway Cabinet)",
       "Fields": [
-        { "name": "Aspirin", "amount": null, "Date": -1 },
-        { "name": "Narcan/Nalaxone", "amount": null, "Date": -1 },
+        { "Name": "Aspirin", "Date": null },
+        { "Name": "Narcan/Nalaxone", "Date": null },
         {
-          "name": "Nitroglycerine (Nitro) Tablets",
-          "amount": null,
-          "Date": -1
+          "Name": "Nitroglycerine (Nitro) Tablets",
+
+          "Date": null
         },
-        { "name": "Apules Epinephrine", "amount": 2, "Date": -1 },
-        { "name": "Oral Glucose", "amount": null, "Date": -1 },
-        { "name": "Packs of Tylenol, 500mg", "amount": 2, "Date": -1 },
-        { "name": "Packs of Benadryl, 50mg", "amount": 2, "Date": -1 },
-        { "name": "Packs of Ibuprofen, 200mg", "amount": 2, "Date": -1 },
-        { "name": "Children's Ibuprofen", "amount": null, "Date": -1 },
-        { "name": "Children' Tylenol", "amount": null, "Date": -1 },
-        { "name": "Albuteral Sulfate", "amount": 2, "Date": -1 },
+        { "Name": "Apules Epinephrine", "Amount": 2, "Date": null },
+        { "Name": "Oral Glucose", "Date": null },
+        { "Name": "Packs of Tylenol, 500mg", "Amount": 2, "Date": null },
+        { "Name": "Packs of Benadryl, 50mg", "Amount": 2, "Date": null },
+        { "Name": "Packs of Ibuprofen, 200mg", "Amount": 2, "Date": null },
+        { "Name": "Children's Ibuprofen", "Date": null },
+        { "Name": "Children' Tylenol", "Date": null },
+        { "Name": "Albuteral Sulfate", "Amount": 2, "Date": null },
         {
-          "name": "Normal Saline Nebulizer (Syringe)",
-          "amount": null,
-          "Date": -1
+          "Name": "Normal Saline Nebulizer (Syringe)",
+
+          "Date": null
         },
-        { "name": "Afrin Nasal Spray", "amount": null, "Date": -1 }
+        { "Name": "Afrin Nasal Spray", "Date": null }
       ]
     },
     {
       "Header": "Trauma Supplies",
       "Fields": [
-        { "name": "4x4's", "amount": 12, "Date": null },
-        { "name": "2x2's", "amount": 12, "Date": null },
-        { "name": "5x9's (or larger)", "amount": 6, "Date": null },
-        { "name": "Large Trauma Dressings", "amount": 2, "Date": null },
-        { "name": "Rolls of Gauze", "amount": 12, "Date": null },
-        { "name": "Triangle Bandages", "amount": 6, "Date": null },
-        { "name": "Band-Aids", "amount": 12, "Date": null },
-        { "name": "Ammonia Inhalants", "amount": null, "Date": null },
-        { "name": "Occlusive Dressings", "amount": 2, "Date": null },
-        { "name": "Trauma Shears", "amount": null, "Date": null },
-        { "name": "Ring Cutter", "amount": null, "Date": null },
-        { "name": "Eye Pads", "amount": 3, "Date": null },
-        { "name": "Hot Packs", "amount": 3, "Date": null },
-        { "name": "Cold Pads", "amount": 3, "Date": null },
-        { "name": "Sterile Burn Sheets", "amount": 2, "Date": null },
-        { "name": "Burn Jelly (Water Jelly)", "amount": null, "Date": -1 },
-        { "name": "Paper Tape", "amount": null, "Date": null },
-        { "name": "B/P Cuffs (Size: Infant)", "amount": null, "Date": null },
-        { "name": "B/P Cuffs (Size: Adult)", "amount": null, "Date": null },
+        { "Name": "4x4's", "Amount": 12 },
+        { "Name": "2x2's", "Amount": 12 },
+        { "Name": "5x9's (or larger)", "Amount": 6 },
+        { "Name": "Large Trauma Dressings", "Amount": 2 },
+        { "Name": "Rolls of Gauze", "Amount": 12 },
+        { "Name": "Triangle Bandages", "Amount": 6 },
+        { "Name": "Band-Aids", "Amount": 12 },
+        { "Name": "Ammonia Inhalants" },
+        { "Name": "Occlusive Dressings", "Amount": 2 },
+        { "Name": "Trauma Shears" },
+        { "Name": "Ring Cutter" },
+        { "Name": "Eye Pads", "Amount": 3 },
+        { "Name": "Hot Packs", "Amount": 3 },
+        { "Name": "Cold Pads", "Amount": 3 },
+        { "Name": "Sterile Burn Sheets", "Amount": 2 },
+        { "Name": "Burn Jelly (Water Jelly)", "Date": null },
+        { "Name": "Paper Tape" },
+        { "Name": "B/P Cuffs (Size: Infant)" },
+        { "Name": "B/P Cuffs (Size: Adult)" },
         {
-          "name": "B/P Cuffs (Size: Adult Large)",
-          "amount": null,
-          "Date": null
+          "Name": "B/P Cuffs (Size: Adult Large)"
         },
         {
-          "name": "B/P Cuffs (Size: Adult X Large)",
-          "amount": null,
-          "Date": null
+          "Name": "B/P Cuffs (Size: Adult X Large)"
         },
-        { "name": "Batteries", "amount": 4, "Date": -1 },
-        { "name": "CAT Tourniquet", "amount": null, "Date": null }
+        { "Name": "Batteries", "Amount": 4, "Date": null },
+        { "Name": "CAT Tourniquet" }
       ]
     },
     {
       "Header": "Irrigation",
       "Fields": [
-        { "name": "Bottle of Sterile Water", "amount": null, "Date": -1 },
-        { "name": "Bottle of Sodium Chloride", "amount": null, "Date": -1 },
-        { "name": "Bottles of Drinking Water", "amount": 2, "Date": null },
-        { "name": "Bottle of Eye Wash", "amount": null, "Date": -1 },
-        { "name": "Wash Cloths", "amount": 4, "Date": null },
-        { "name": "Disposable Bed Pads", "amount": 4, "Date": null }
+        { "Name": "Bottle of Sterile Water", "Date": null },
+        { "Name": "Bottle of Sodium Chloride", "Date": null },
+        { "Name": "Bottles of Drinking Water", "Amount": 2 },
+        { "Name": "Bottle of Eye Wash", "Date": null },
+        { "Name": "Wash Cloths", "Amount": 4 },
+        { "Name": "Disposable Bed Pads", "Amount": 4 }
       ]
     },
     {
       "Header": "Bio Hazard Supplies",
       "Fields": [
-        { "name": "Emesis Basins", "amount": 2, "Date": null },
-        { "name": "PPE Kits", "amount": 3, "Date": null },
-        { "name": "Face Shields/Goggles", "amount": 3, "Date": null },
-        { "name": "Roll of Paper Towles", "amount": null, "Date": null },
+        { "Name": "Emesis Basins", "Amount": 2 },
+        { "Name": "PPE Kits", "Amount": 3 },
+        { "Name": "Face Shields/Goggles", "Amount": 3 },
+        { "Name": "Roll of Paper Towles" },
         {
-          "name": "Bio Hazard Bags (Red Bags)",
-          "amount": null,
-          "Date": null
+          "Name": "Bio Hazard Bags (Red Bags)"
         },
-        { "name": "Masks", "amount": 3, "Date": null },
-        { "name": "Shoe Covers", "amount": null, "Date": null },
+        { "Name": "Masks", "Amount": 3 },
+        { "Name": "Shoe Covers" },
         {
-          "name": "Disinfectant (Lysol, Clorox Wipes, etc.)",
-          "amount": null,
-          "Date": null
+          "Name": "Disinfectant (Lysol, Clorox Wipes, etc.)"
         },
-        { "name": "Triage Tags", "amount": null, "Date": null }
+        { "Name": "Triage Tags" }
       ]
     }
   ]
