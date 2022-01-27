@@ -64,6 +64,7 @@ export default {
   },
   methods: {
     testest: function () {
+      this.problems = "";
       for (const section of this.checks.Sections) {
         let changed = false;
         for (const field of section.Fields) {
