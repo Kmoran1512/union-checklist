@@ -11,7 +11,12 @@
 
     <div class="field col">
       <label for="dateToday">Date:</label>
-      <Calendar id="dateToday" v-model="selectedDate" showButtonBar />
+      <Calendar
+        id="dateToday"
+        v-model="selectedDate"
+        disabled="true"
+        showButtonBar
+      />
     </div>
 
     <div class="field col">
@@ -48,7 +53,7 @@ export default {
     console.log(this.checklist);
     return {
       selectedTruck: this.checklist["-- Selected Truck"],
-      selectedDate: this.checklist.Date,
+      selectedDate: new Date(),
       enteredMilage: this.checklist.Milage,
       checkedBy: this.checklist["Checked By"],
       fuelLevel: this.checklist["Fuel Level"],

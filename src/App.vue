@@ -103,7 +103,16 @@ export default {
         }
         this.problems = this.problems + "\n";
       }
-      alert("Form Submitted");
+
+      if (this.problems.trim()) {
+        alert(
+          "Form Submitted \n\n\n The following were missing or out of date: \n\n " +
+            this.problems
+        );
+      } else {
+        alert("Form Submitted \n\n All looks good! \n" + this.problems);
+      }
+
       this.sendEmail(this.problems);
     },
     sendEmail(message) {

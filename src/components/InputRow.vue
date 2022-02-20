@@ -13,7 +13,12 @@
         <p>Date.</p>
 
         <div class="calendar-wrapper">
-          <Calendar style="height: 25px" v-model="expiryDate" />
+          <Calendar
+            style="height: 25px"
+            v-model="expiryDate"
+            view="month"
+            date-format="mm/yy"
+          />
         </div>
       </div>
       <div
