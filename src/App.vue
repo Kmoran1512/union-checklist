@@ -104,6 +104,8 @@ export default {
         this.problems = this.problems + "\n";
       }
 
+      await this.sendEmail(this.problems);
+
       if (this.problems.trim()) {
         alert(
           "Form Submitted \n\n\n The following were missing or out of date: \n\n " +
@@ -113,7 +115,6 @@ export default {
         alert("Form Submitted \n\n All looks good! \n" + this.problems);
       }
 
-      await this.sendEmail(this.problems);
       location.reload();
     },
     async sendEmail(message) {
