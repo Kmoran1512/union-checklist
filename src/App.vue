@@ -33,7 +33,7 @@
   <div class="card" style="padding: 1rem">
     <div class="flex justify-content-center flex-wrap card-container">
       <div class="flex align-items-center justify-content-center">
-        <Button label="Submit" v-on:click="testest" />
+        <Button label="Submit" v-on:click="submit" />
       </div>
     </div>
   </div>
@@ -63,7 +63,7 @@ export default {
     this.checks = checklistData;
   },
   methods: {
-    testest: function () {
+    submit: async function () {
       this.problems = "";
       for (const section of this.checks.Sections) {
         let changed = false;
@@ -113,18 +113,23 @@ export default {
         alert("Form Submitted \n\n All looks good! \n" + this.problems);
       }
 
-      this.sendEmail(this.problems);
+      await this.sendEmail(this.problems);
+      location.reload();
     },
-    sendEmail(message) {
+    async sendEmail(message) {
       try {
-        emailjs.send(
-          "service_rzp1dw6",
-          "template_2snq8yq",
-          {
-            messageText: message,
-          },
-          "user_V4ZEIjyjdrKbWOei7h8Yz"
-        );
+        emailjs
+          .send(
+            "service_rzp1dw6",
+            "template_2snq8yq",
+            {
+              messageText: message,
+            },
+            "user_V4ZEIjyjdrKbWOei7h8Yz"
+          )
+          .then(() => {
+            return true;
+          });
       } catch (error) {
         console.log({ error });
       }
