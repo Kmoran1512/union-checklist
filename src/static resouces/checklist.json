@@ -161,6 +161,7 @@
         { "Name": "Batteries", "Amount": 4, "Date": null },
         { "Name": "CAT Tourniquet" },
         { "Name": "Hemostatic Gauze", "Date": null },
+        { "Name": "Hemostatic Roll", "Date": null },
         { "Name": "Masks", "Amount": 3 },
         { "Name": "Gowns" }
       ]
