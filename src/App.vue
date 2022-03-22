@@ -32,6 +32,15 @@
 
   <div class="card" style="padding: 1rem">
     <div class="flex justify-content-center flex-wrap card-container">
+      <h3>Comments</h3>
+    </div>
+    <div class="flex justify-content-center flex-wrap card-container">
+      <Textarea v-model="comments" :autoResize="true" rows="5" cols="30" />
+    </div>
+  </div>
+
+  <div class="card" style="padding: 1rem">
+    <div class="flex justify-content-center flex-wrap card-container">
       <div class="flex align-items-center justify-content-center">
         <Button label="Submit" v-on:click="submit" />
       </div>
@@ -56,6 +65,7 @@ export default {
   data() {
     return {
       checks: {},
+      comments: "",
       problems: "",
     };
   },
@@ -103,6 +113,9 @@ export default {
         }
         this.problems = this.problems + "\n";
       }
+
+      this.problems = this.problems + "\n\nComments: \n  " + this.comments;
+
 
       await this.sendEmail(this.problems);
 

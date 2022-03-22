@@ -10,6 +10,7 @@ import Dropdown from "primevue/dropdown";
 import InputNumber from "primevue/inputnumber";
 import InputSwitch from "primevue/inputswitch";
 import InputText from "primevue/inputtext";
+import Textarea from 'primevue/textarea';
 
 import "./registerServiceWorker";
 
@@ -28,6 +29,7 @@ app
   .component("Dropdown", Dropdown)
   .component("InputNumber", InputNumber)
   .component("InputSwitch", InputSwitch)
+  .component("Textarea", Textarea)
   .component("InputText", InputText);
 
 app.mount("#app");
