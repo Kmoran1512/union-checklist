@@ -116,7 +116,7 @@ export default {
 
       this.problems = this.problems + "\n\nComments: \n  " + this.comments;
 
-      await this.sendEmail(this.problems);
+      await this.sendEmail(JSON.parse(JSON.stringify(this.problems)));
 
       if (this.problems.trim()) {
         alert(
