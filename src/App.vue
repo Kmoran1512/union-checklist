@@ -116,8 +116,7 @@ export default {
 
       this.problems = this.problems + "\n\nComments: \n  " + this.comments;
 
-
-      await this.sendEmail(this.problems);
+      await this.sendEmail(JSON.parse(JSON.stringify(this.problems)));
 
       if (this.problems.trim()) {
         alert(
@@ -128,7 +127,7 @@ export default {
         alert("Form Submitted \n\n All looks good! \n" + this.problems);
       }
 
-      location.reload();
+      this.formClear();
     },
     async sendEmail(message) {
       try {
@@ -146,6 +145,17 @@ export default {
           });
       } catch (error) {
         console.log({ error });
+      }
+    },
+    formClear() {
+      this.$refs["topRowInfo"].selectedTruck = null;
+      this.$refs["topRowInfo"].enteredMilage = null;
+      this.$refs["topRowInfo"].checkedBy = null;
+      this.$refs["topRowInfo"].fuelLevel = null;
+      for (const section of this.checks.Sections) {
+        for (const field of section.Fields) {
+          this.$refs[field.Name].isChecked = false;
+        }
       }
     },
   },
