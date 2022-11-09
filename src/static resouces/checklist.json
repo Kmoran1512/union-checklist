@@ -201,7 +201,13 @@
         { "Name": "Pediatric Defibrillator Pad", "Date": null },
         { "Name": "Disposable Razor", "Amount": 1 },
         { "Name": "BLS Jump Bag", "Amount": 1 },
-        { "Name": "LUCAS" }
+        { "Name": "LUCAS" },
+        { "Name": "i-gel size 1.5", "Amount": 1, "Date": null},
+        { "Name": "i-gel size 2", "Amount": 1, "Date": null},
+        { "Name": "i-gel size 2.5", "Amount": 1, "Date": null},
+        { "Name": "i-gel size 3", "Amount": 1, "Date": null},
+        { "Name": "i-gel size 4", "Amount": 1, "Date": null},
+        { "Name": "i-gel size 5", "Amount": 1, "Date": null}
       ]
     },
     {
